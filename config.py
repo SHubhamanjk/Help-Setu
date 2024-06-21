@@ -1,0 +1,4 @@
+SECRET_KEY = 'HelpSetu@IITpatna'
+MAIL_PASSWORD='mtuuffkksianexgd'
+TWILIO_ACCOUNT_SIID = 'AC0db0be4e1d0023d9c0b9b5a3c659b6bb'
+TWILIO_AUTH_TOKEEN = '6df992d19cf114803edadafa76898dfa'
