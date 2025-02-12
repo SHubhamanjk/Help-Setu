@@ -1,62 +1,63 @@
-# HelpSetu Documentation
+# Help Setu
 
-This reporting system is a Flask-based web application designed to allow users to report various social issues and incidents. This document provides an overview of the system's functionality and how to use it.
+##  Overview
+Help Setu is a confidential reporting platform designed to address community issues such as domestic violence, child labor, and other social concerns. The platform provides a secure and anonymous way for individuals to report incidents, seek help, and connect with relevant authorities.
 
-## Getting Started
+##  Features
+-  **Anonymous Reporting** – Users can report incidents without revealing their identity.
+-  **Real-time Case Tracking** – Monitor the progress of reported cases.
+-  **Secure & Confidential** – Data encryption ensures privacy and protection.
+-  **Direct Communication with Authorities** – Reports are forwarded to appropriate agencies.
+-  **Incident History & Reports** – Maintain records for future reference.
 
-**Installation**: Ensure you have Python installed on your system. Then activate your virtual environment
+##  Tech Stack
+- **Backend:** Python, Flask, SQL
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** PostgreSQL / MySQL
+- **Deployment:** AWS / Heroku
 
-```
-python -m venv venv
-```
+##  Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.8+
+- Virtual environment (optional but recommended)
 
-Then You can install the required dependencies using `pip`:
+### Steps
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/SHubhamanjk/Help-Setu.git
+   cd HelpSetu
+   ```
 
-```
-pip install -r requirements.txt
-```
+2. **Set Up Backend**
+   ```bash
+   pip install -r requirements.txt
+   python app.py
+   ```
 
-**Setting Up the Database**: The Database automatically sets up when you run `app.py`
+3. **Access the Application**
+   Open `http://localhost:5000` in your browser.
 
-**Running the Application**: Start the Flask application by running the following command in your terminal:
+## 🛠️ Usage
+1. **Report an Incident** – Submit a report with necessary details.
+2. **Track Case Progress** – Check real-time updates on the reported case.
+3. **Seek Assistance** – Get connected with support organizations.
 
-`python app.py`
+## 📌 Future Enhancements
+- AI-based risk assessment for case prioritization.
+- Mobile app for ease of reporting.
+- Multi-language support for wider accessibility.
+- Integration with law enforcement databases.
 
-**Accessing the Application**: Once the application is running, you can access it by opening a web browser and navigating to `http://localhost:5000`.
+## 🤝 Contribution
+Contributions are welcome! Feel free to fork the repo, create feature branches, and submit pull requests.
 
-## Functionality
+## License
+This project is licensed under the MIT License.
 
-### Reporting Issues
+## Contact
+Developed by **Shubham Kumar Gupta**  
+- **GitHub**: [SHubhamanjk](https://github.com/SHubhamanjk)
+- **Email**: shubhashubham07kumargupta@gmail.com
+- **LinkedIn**: [Shubham Kumar Gupta](https://www.linkedin.com/in/shubhamiitpatna) 
 
-Users can report issues by sending a POST request to the `/sendus` endpoint from a form. They need to provide details such as their name, victim's name, contact information, address, state, district, block, and proof of incidents.Upload location button track your location and store in database. The issue is stored in the database upon successful reporting, and an email notification is sent.
-See `functions.py` for input field names.
-
-### User Registration
-
-New users can create their account by sending a POST request to the `/create_account` endpoint with their mobile number which will verify through OTP and setting the password.
-
-### User Login
-
-Registered users can log in by sending a POST request to the `/login` endpoint with their registered mobile number and password. If the credentials are valid, the user is logged in.
-
-### Rewards
-
-The `/rewards` endpoint provides the earned coins of users which can be earned by sending report. This allows users to view the reward page and see the coins earned by each user.
-
-## Endpoints
-
-- **POST `/sendus`**: Report an issue.
-- **POST `/create_account`**: Register a new user.
-- **POST `/login`**: Log in as an existing user.
-- **GET `/rewards`**: View the reward page.
-- **`/partners`**: View the partners of HelpSetu
-- **`/About Us`**: To know about us
-- **`/Donate Us`**: To donate us in our initiative
-
-## Dependencies
-
-See `requirements.txt`
-
-## Running the Application
-
-To run the application, execute the `app.py` file using Python. Make sure to set up the database before running the application.
