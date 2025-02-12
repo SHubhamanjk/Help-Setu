@@ -38,18 +38,18 @@ Ensure you have the following installed:
 3. **Access the Application**
    Open `http://localhost:5000` in your browser.
 
-## 🛠️ Usage
+##  Usage
 1. **Report an Incident** – Submit a report with necessary details.
 2. **Track Case Progress** – Check real-time updates on the reported case.
 3. **Seek Assistance** – Get connected with support organizations.
 
-## 📌 Future Enhancements
+## Future Enhancements
 - AI-based risk assessment for case prioritization.
 - Mobile app for ease of reporting.
 - Multi-language support for wider accessibility.
 - Integration with law enforcement databases.
 
-## 🤝 Contribution
+## Contribution
 Contributions are welcome! Feel free to fork the repo, create feature branches, and submit pull requests.
 
 ## License
